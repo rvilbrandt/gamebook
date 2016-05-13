@@ -54,7 +54,7 @@ can use it to create HTML pages or a CLI application and let the reader play the
 
 ## Future goals
 
-* Character handling with attributes (strength, lifepoints, skills, etc.)
+* Character handling with attributes (strength, hitpoints, skills, etc.)
 * Monsters/Enemies with attributes
 * Fighting based on attributes and virtual "dice rolls"
 
