@@ -1,0 +1,19 @@
+{
+    "states": {
+        "eq": {
+            "name": "Hodor"
+        },
+        "gt": {
+            "test": 1                
+        },
+        "lt": {
+        },
+        "ne": {
+        }
+    },
+    "inventory": {
+        "has": [
+            "key"
+        ]
+    }
+}

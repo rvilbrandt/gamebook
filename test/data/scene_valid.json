@@ -1,0 +1,47 @@
+{
+    "id": "beginning",
+    "contents": [
+        {
+            "text": "Welcome to this great adventure. You're standing in front of three doors. Two are already opened, the last one is locked and needs a key to be opened."
+        }
+    ],
+    "options": [
+        {
+            "text": "Walk through the first open door.",
+            "jumpTo": "door_1_death"
+        }, 
+        {
+            "text": "Go straight through door number two.",
+            "jumpTo": "door_2",
+            "conditions": {
+                "inventory": {
+                    "hasNot": [
+                        "key"
+                    ]
+                }
+            }
+        }, 
+        {
+            "text": "Open the locked door with the key.",
+            "jumpTo": "door_3",
+            "conditions": {
+                "inventory": {
+                    "has": [
+                        "key"
+                    ]
+                }
+            }
+        },
+        {
+            "text": "Go through the door you've openend with the key previously.",
+            "jumpTo": "door_3",
+            "conditions": {
+                "states": {
+                    "eq": {
+                        "door_3_opened": 1
+                    }
+                }
+            }
+        }
+    ]
+}

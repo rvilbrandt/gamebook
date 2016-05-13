@@ -1,0 +1,140 @@
+{
+    "title": "Yet another fairytale",
+    "author": "Ronald Vilbrandt",
+    "version": "0.4",
+    "startScene": "beginning",
+    "scenes": [
+        
+        {
+            "id": "beginning",
+            "contents": [
+                {
+                    "text": "Welcome to this great adventure. You're standing in front of three doors. Two are already opened, the last one is locked and needs a key to be opened."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Walk through the first open door.",
+                    "jumpTo": "door_1_death"
+                }, 
+                {
+                    "text": "Go straight through door number two.",
+                    "jumpTo": "door_2",
+                    "conditions": {
+                        "inventory": {
+                            "hasNot": [
+                                "key"
+                            ]
+                        }
+                    }
+                }, 
+                {
+                    "text": "Open the locked door with the key.",
+                    "jumpTo": "door_3",
+                    "conditions": {
+                        "inventory": {
+                            "has": [
+                                "key"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "text": "Go through the door you've openend with the key previously.",
+                    "jumpTo": "door_3",
+                    "conditions": {
+                        "states": {
+                            "eq": {
+                                "door_3_opened": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        
+        {
+            "id": "door_1_death",
+            "contents": [
+                {
+                    "text": "You fall into a deep hole to death. Boy, that escalated quickly."
+                }
+            ]
+        },
+
+        {
+            "id": "door_2",
+            "contents": [
+                {
+                    "text": "You're standing in an empty room with nothing but a key in the center of the room."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Take the key.",
+                    "jumpTo": "door_2_key_taken"
+                },
+                {
+                    "text": "Leave the key alone and return to the previous room.",
+                    "jumpTo": "beginning"
+                }
+            ]
+
+        },
+
+        {
+            "id": "door_2_key_taken",
+            "contents": [
+                {
+                    "text": "You've put the key into your pocket."
+                }
+            ],
+            "options": [
+                {
+                    "text": "Leave the room.",
+                    "jumpTo": "beginning"
+                }
+            ],
+            "inventory": {
+                "add": [
+                    "key"
+                ]
+            }
+        },
+
+        {
+            "id": "door_3",
+            "contents": [
+                {
+                    "text": "Congratulation! You've found the final room and exit.\nThank you, stranger! But our Princess is in another castle!"
+                }
+            ],
+            "inventory": {
+                "remove": [
+                    "key"
+                ]
+            },
+            "states": {
+                "door_3_opened": 1
+            }
+            
+        }
+        
+    ],
+    
+    "items": [
+        
+        {
+            "id": "key",
+            "name": "Key",
+            "description": "An old and rusty key."
+        }, 
+        {
+            "id": "potion",
+            "name": "Magic Potion",
+            "description": "One more magic potion. It will heal my aching wounds."
+        }
+        
+    ]
+	
+}

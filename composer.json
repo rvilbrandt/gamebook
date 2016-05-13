@@ -1,0 +1,19 @@
+{
+    "name": "rvilbrandt/gamebook",
+    "authors": [
+        {
+            "name": "Ronald Vilbrandt",
+            "email": "info@rvi-media.de"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.8"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "rvilbrandt\\gamebook\\": "src/",
+            "rvilbrandt\\gamebookdemo\\": "demo/src/"
+        }
+    }
+}
