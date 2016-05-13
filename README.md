@@ -60,8 +60,8 @@ can use it to create HTML pages or a CLI application and let the reader play the
 
 ## Demo
 
-A tiny demo is already included an prints out the parsed scene and inventory as HTML. Try this demo here (based on the 
-example gamebook below).
+A tiny demo is already included an prints out the parsed scene and inventory as HTML. 
+[Try this demo here](http://gb.rvi-media.de/) (based on the example gamebook below).
 
 
 ## Structure of my gamebook format
