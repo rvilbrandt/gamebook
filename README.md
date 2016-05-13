@@ -1,7 +1,7 @@
 # Gamebook Parser
 PHP Parser for gamebook files by Ronald Vilbrandt
 
-# About
+## About
 This small but decent project is for fulfilling the dream I had since I was a young teenager and read Steve Jackson's 
 or Ian Livingstone's fantasy gamebooks. Later I also read so called "solo adventures" of the "Das Schwarze Auge" (The 
 Dark Eye / Realms of Arkania) branch which used simply the same technique as the earlier gamebooks already mentioned. 
@@ -32,19 +32,19 @@ previously (e.g. if you've talked to a person or not).
 
 More details at https://en.wikipedia.org/wiki/Gamebook
 
-# What is Gamebook Parser?
+## What is Gamebook Parser?
 
 My gamebook parser reads a gamebook text file with scenes, options and conditions and parses them to a PHP object. You 
 can use it to create HTML pages or a CLI application and let the reader play the game.
 
-# Features of my gamebook format
+## Features of my gamebook format
 
 * Scene with multiple options to go on
 * Scene with multiple textblocks that optionally can be shown only when conditions are fulfilled (see conditions)
 * Options that optionally can be shown only when conditions are fulfilled (see conditions)
 * Conditions can be "states" that are equal, lower, higher or not existing. Also the inventory can be checked if item is or is not in it
 
-# Features of my gamebook parser
+## Features of my gamebook parser
 
 * Parsing the current scene, comparing the conditions, handling the inventory and state changes and returning the parsed objects for easy access
 * Acts as a model for MVC environments like a charme
@@ -52,23 +52,23 @@ can use it to create HTML pages or a CLI application and let the reader play the
 * Handling a game state with session writers (ships with PHP Session support)
 * Components like JSON file reader or session handler may be replaced by customs instantly
 
-# Future goals
+## Future goals
 
 * Character handling with attributes (strength, lifepoints, skills, etc.)
 * Monsters/Enemies with attributes
 * Fighting based on attributes and virtual "dice rolls"
 
-# Demo
+## Demo
 
 A tiny demo is already included an prints out the parsed scene and inventory as HTML. Try this demo here (based on the 
 example gamebook below).
 
 
-# Structure of my gamebook format
+## Structure of my gamebook format
 
-## JSON samples
+### JSON samples
 
-### Main
+#### Main
 ```json
 {
     "title": "Yet another fairytale",
@@ -80,7 +80,7 @@ example gamebook below).
 }
 ```
 
-### Simple Scene with dead end
+#### Simple Scene with dead end
 ```json
 {
     "id": "door_1_death",
@@ -92,7 +92,7 @@ example gamebook below).
 }
 ```
 
-### Simple Scene with options to go on
+#### Simple Scene with options to go on
 ```json
 {
     "id": "door_2",
@@ -115,7 +115,7 @@ example gamebook below).
 }
 ```
 
-### Advanced Scene with adding something to the inventory
+#### Advanced Scene with adding something to the inventory
 ```json
 {
     "id": "door_2_key_taken",
@@ -138,7 +138,7 @@ example gamebook below).
 }
 ```
 
-### Advanced Scene with setting a state
+#### Advanced Scene with setting a state
 ```json
 {
     "id": "door_3",
@@ -159,7 +159,7 @@ example gamebook below).
 }
 ```
 
-### Complex scene with querying states and inventory for showing options or not
+#### Complex scene with querying states and inventory for showing options or not
 ```json
 {
     "id": "beginning",
@@ -210,7 +210,7 @@ example gamebook below).
 }
 ```
 
-### Item list
+#### Item list
 ```json
 {
     "id": "potion",
