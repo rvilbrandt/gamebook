@@ -14,8 +14,6 @@ use rvilbrandt\gamebook\Parser;
 
 require_once("./bootstrap.php");
 
-session_start();
-
 $strJumpTo = true === isset($_GET['jump_to']) ? $_GET['jump_to'] : null;
 
 // Initialize
