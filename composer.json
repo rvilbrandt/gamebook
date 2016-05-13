@@ -1,5 +1,6 @@
 {
     "name": "rvilbrandt/gamebook",
+    "description": "Gamebook Parser in PHP",
     "authors": [
         {
             "name": "Ronald Vilbrandt",
