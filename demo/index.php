@@ -12,7 +12,7 @@ use rvilbrandt\gamebook\Model\StateList;
 use rvilbrandt\gamebook\Model\Inventory;
 use rvilbrandt\gamebook\Parser;
 
-require_once("./../bootstrap.php");
+require_once("./bootstrap.php");
 
 session_start();
 
