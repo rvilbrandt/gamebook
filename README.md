@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/rvilbrandt/gamebook.svg?branch=master)](https://travis-ci.org/rvilbrandt/gamebook)
+[![Latest Stable Version](https://img.shields.io/packagist/v/rvilbrandt/gamebook.svg?style=flat-square)](https://packagist.org/packages/rvilbrandt/gamebook)
+[![License](https://poser.pugx.org/rvilbrandt/gamebook/license)](https://packagist.org/packages/rvilbrandt/gamebook)
 
 # Gamebook Parser
 PHP Parser for gamebook files by Ronald Vilbrandt
