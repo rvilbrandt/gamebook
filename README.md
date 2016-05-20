@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rvilbrandt/gamebook.svg?branch=master)](https://travis-ci.org/rvilbrandt/gamebook)
+
 # Gamebook Parser
 PHP Parser for gamebook files by Ronald Vilbrandt
 
